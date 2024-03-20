@@ -1,0 +1,187 @@
+@import url(https://fonts.googleapis.com/css?family=Exo:100);
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Comfortaa", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+html, body {
+    height: 100%;
+}
+
+header {
+   position: absolute;
+   left: 0;
+   top: 40%;
+   width: 100%;
+   text-align: center;
+}
+
+@-webkit-keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 50px 50px;
+  }
+}
+@-moz-keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 50px 50px;
+  }
+}
+@-o-keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 50px 50px;
+  }
+}
+@keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 50px 50px;
+  }
+}
+@-webkit-keyframes bg-scrolling {
+  0% {
+    background-position: 50px 50px;
+  }
+}
+@-moz-keyframes bg-scrolling {
+  0% {
+    background-position: 50px 50px;
+  }
+}
+@-o-keyframes bg-scrolling {
+  0% {
+    background-position: 50px 50px;
+  }
+}
+@keyframes bg-scrolling {
+  0% {
+    background-position: 50px 50px;
+  }
+}
+
+.front {
+  height: 80%;
+  color: #999;
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAIAAACRXR/mAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAABnSURBVHja7M5RDYAwDEXRDgmvEocnlrQS2SwUFST9uEfBGWs9c97nbGtDcquqiKhOImLs/UpuzVzWEi1atGjRokWLFi1atGjRokWLFi1atGjRokWLFi1af7Ukz8xWp8z8AAAA//8DAJ4LoEAAlL1nAAAAAElFTkSuQmCC") repeat 0 0;
+  -webkit-animation: bg-scrolling-reverse 0.92s infinite;
+  -moz-animation: bg-scrolling-reverse 0.92s infinite;
+  -o-animation: bg-scrolling-reverse 0.92s infinite;
+  animation: bg-scrolling-reverse 0.92s infinite;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+  -o-animation-timing-function: linear;
+  animation-timing-function: linear;
+}
+
+
+#hello {
+  font-size: 60px;
+  font-weight: 300;
+  color: #e06bb9;
+}
+
+#container {
+  background-color: #7E83BC;
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr 1fr;
+  grid-template-rows: 1fr 1fr 8fr;
+  grid-template-areas:
+    "icon icon icon icon"
+    "midden1 midden1 midden1 midden1"
+    "sidel project project sider";
+}
+
+#icons {
+  grid-area: icon;
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+}
+
+#icons img {
+  width: 16%;
+}
+
+article {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#title {
+  grid-area: about;
+  background-color: #7C7E98;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20%;
+  font-size: 3em;
+}
+
+#between {
+  font-size: 1cm;
+  background-color: #626374;
+  opacity: 75%;
+  display: flex;
+  grid-area: midden1;
+  justify-content: space-around;
+  text-align: center;
+}
+
+#projects {
+  grid-area: project;
+  background-color: #383A4F;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+section {
+  background-color: #626374;
+  height: 17%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  margin-top: 2.5%;
+  margin-bottom: 2.5%;
+  margin-left: 5%;
+  margin-right: 5%;
+  text-align: center;
+}
+
+section h1 {
+  margin: 10px;
+}
+
+#subp {
+  height: 80%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#subp img {
+  height: 90%;
+}
+
+#subp p {
+  width: 30%;
+}
+
+#sider {
+  grid-area: sider;
+  background-color: #383A4F;
+}
+
+#sidel {
+  grid-area: sidel;
+  background-color: #383A4F;
+}
